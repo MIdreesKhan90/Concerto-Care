@@ -1,0 +1,59 @@
+/*--------------*\
+    Nav / Tabs
+\*--------------*/
+
+.blogs-nav{
+  background-color: $clr-blue-squeeze;
+  padding: 14px 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 60px;
+
+  @include grid-sm-down{
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .nav-tabs {
+    border: 0;
+    .nav-item{
+      margin: 0 20px;
+      @include grid-sm-down{
+        margin: 0;
+        width: 100%;
+      }
+      .nav-link {
+        font-size: 20px;
+        font-weight: 500;
+        color: $clr-blue-jay;
+        padding: 16px 0;
+        border: none;
+        &:focus,
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+
+    .nav-item.show .nav-link,
+    .nav-link.active {
+      position: relative;
+      background-color: transparent;
+      font-weight: 700;
+      &:after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: $clr-reddish-orange;
+        position: absolute;
+        left: 0;
+        bottom: -14px;
+
+        @include grid-sm-down{
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

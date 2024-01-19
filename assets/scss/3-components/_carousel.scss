@@ -1,0 +1,86 @@
+/*--------------*\
+    Carousel
+\*--------------*/
+.owl-carousel.v-center-arrows{
+  position: relative;
+}
+.v-center-arrows{
+  .owl-nav{
+    font-size: 40px;
+    line-height: 1em;
+    color: #777;
+    font-weight: 300;
+
+    .owl-prev,
+    .owl-next{
+      position: absolute;
+      top: calc(50% - 22px);
+      margin: 0;
+      padding: 0;
+      color: $clr-blue-jay;
+      &:hover{
+        background: none;
+        color: $clr-blue-jay;
+      }
+
+      @include grid-sm-down{
+        top: 95%;
+      }
+    }
+  }
+  .owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    .owl-dot{
+      span{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        background-color: rgba(255,255,255,0.2);
+      }
+      &.active{
+        span{
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+.news-carousel{
+  .item{
+    .img{
+      display: flex;
+      align-items: center;
+      margin-bottom: 23px;
+      height: 170px;
+    }
+    .content{
+      a{
+        color: $clr-blue-jay;
+        font-weight: $font-semi-bold;
+      }
+    }
+
+  }
+
+  .owl-nav{
+    font-size: 35px;
+    line-height: 1em;
+
+    .owl-prev{
+      left: -80px;
+      @include grid-sm-down{
+        left: 10px;
+      }
+    }
+    .owl-next{
+      right: -80px;
+      @include grid-sm-down{
+        right: 10px;
+      }
+    }
+  }
+}

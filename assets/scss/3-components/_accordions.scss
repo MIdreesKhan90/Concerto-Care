@@ -1,0 +1,66 @@
+/*--------------*\
+    Accordions
+\*--------------*/
+
+.faq-accordion {
+  .card{
+    background-color: $clr-alabaster;
+    border: none;
+    + .card{
+      margin-top: 10px;
+    }
+
+    .card-header {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      position: relative;
+      button {
+        font-size: 24px;
+        font-weight: $font-medium;
+        color: $clr-blue-jay;
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        text-align: left;
+        padding: 26px 30px 26px 80px;
+        &:hover,
+        &:focus{
+          text-decoration: none;
+        }
+
+        &:before,
+        &:after{
+          content: '';
+          position: absolute;
+          display: block;
+          background-color: $clr-blue-jay;
+        }
+        &:before{
+          width: 22px;
+          height: 2px;
+          left: 30px;
+          top: 45px;
+        }
+        &:after{
+          height: 22px;
+          width: 2px;
+          left: 40px;
+          top: 35px;
+        }
+
+        &:not(.collapsed){
+          font-weight: $font-semi-bold;
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+    .card-body{
+      padding-top: 0;
+      padding-left: 80px;
+    }
+  }
+
+}

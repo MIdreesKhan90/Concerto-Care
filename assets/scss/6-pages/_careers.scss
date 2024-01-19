@@ -1,0 +1,72 @@
+.lh-base{
+    line-height: 1.44;
+}
+.img-fit {
+
+    padding-top: 14.25%;
+    /* 16:9 Aspect Ratio */
+
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+
+.why-contcerto-care {
+
+    .row {
+
+        .col-md-4 {
+
+            &:after {
+                content: "";
+                width: 1px;
+                height: 100px;
+                opacity: 0.2;
+                background: #2C4E6C;
+                position: absolute;
+                right: 0;
+                top: 32px;
+                @include grid-sm-down{
+                    display: none;
+                }
+            }
+
+
+            &:nth-child(3n+3) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.why-working {
+    color: $white;
+    padding-top: 104px;
+
+    h2 {
+        margin-bottom: 60px;
+    }
+
+    p {
+        border-left: 1px solid $clr-arty-orange;
+        padding: 3px 42px 3px 26px;
+        font-size: 20px;
+        margin-bottom: 40px;
+
+        @include grid-md-down{
+            padding: 3px 22px 3px 22px;
+        font-size:18px;
+        }
+    }
+}
+
+.our-mission{
+
+    p{  
+        span{font-weight: 500;}
+    }
+}

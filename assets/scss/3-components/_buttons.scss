@@ -1,0 +1,89 @@
+/*--------------*\
+    Buttons
+\*--------------*/
+button{
+  &:hover,
+  &:focus,
+  &:active{
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+a{
+  //color: $clr-blue-jay;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  padding: .85rem 1.5rem;
+  font-weight: 600;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+.btn-blue {
+  background-color: #006a9d;
+  color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #fff;
+    background-color: #f8943a;
+  }
+}
+
+.btn-orange {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: $clr-arty-orange;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.btn-rounded-outline {
+  border: 2px solid #db7e38;
+  color: #db7e38;
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 170px;
+  min-height: 60px;
+  line-height: 40px;
+  border-radius: 50px;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: #db7e38;
+    color: #fff;
+  }
+}
+
+.btn-dark-blue {
+  background: #627fa1;
+  border-radius: 50px;
+  color: #fff;
+
+  &:hover {
+    background: rgba(98, 127, 161, 0.8);
+  }
+}

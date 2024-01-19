@@ -1,0 +1,30 @@
+/*--------------*\
+    Animations
+\*--------------*/
+
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+.hover-sink-away{
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-animation-name: anim-sink-away;
+    animation-name: anim-sink-away;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+}

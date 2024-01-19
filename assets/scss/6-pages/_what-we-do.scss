@@ -1,0 +1,241 @@
+.home-primary-hero-section {
+    background-image: url($images-path + "/home-primary-hero-bg-image.jpg");
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 56, 79, 0.95);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        font-family: $nunito-font-family;
+    }
+
+    .description {
+        max-width: 787px;
+        margin: 0 auto;
+
+        p {
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+        }
+    }
+}
+
+.orange-line {
+    width: 57px;
+    height: 7px;
+    border-radius: 28px;
+    background: $clr-arty-orange;
+    margin: 0 0 20px;
+}
+
+.our-program-section {
+    padding: 80px 0;
+    @include grid-sm-down {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        color: #1B384F;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: $nunito-font-family;
+    }
+
+    p {
+        color: #3D454E;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+        a{
+            color: #3D454E;
+            text-decoration: underline;
+        }
+        i {
+            font-weight: 500;
+        }
+    }
+
+    img {
+        @include grid-md-down {
+            display: block;
+            margin: 20px auto;
+        }
+        & + img{
+            margin-top: 20px;
+        }
+    }
+}
+
+.support-services-section {
+    background-image: url($images-path + "/support-services-bg-image.jpg");
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 56, 79, 0.95);
+    }
+
+    .sm-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .orange-line {
+        margin: 0 auto 20px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: $nunito-font-family;
+    }
+
+    .description {
+        max-width: 721px;
+        margin: 0 auto 64px;
+        text-align: center;
+
+        p {
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+        }
+    }
+
+    .support-services-card {
+        text-align: center;
+        margin-bottom: 48px;
+
+        .card-icon {
+            border-radius: 65px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 23px;
+            width: fit-content;
+            margin: 0 auto 20px;
+
+            img {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        h6 {
+            color: #FFF;
+            font-family: $nunito-font-family;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.90);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5em;
+        }
+    }
+}
+
+.availability-section {
+    padding-top: 80px;
+    @include grid-sm-down {
+        padding-top: 40px;
+    }
+
+    .orange-line {
+        margin: 0 auto 20px;
+    }
+
+    .section-title {
+        color: #1B384F;
+        font-family: $nunito-font-family;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .description {
+        max-width: 780px;
+        margin: 20px auto;
+
+        p {
+            color: #3D454E;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+        }
+    }
+
+    .availability-card {
+        border-radius: 12px;
+        margin-top: 44px;
+        position: relative;
+        overflow: hidden;
+
+        .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0px 0px 12px 12px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 32px 63px 42px;
+
+            @include grid-md-down{
+                position: static;
+                padding: 30px;
+            }
+
+            p {
+                color: #3D454E;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.6em;
+
+                & + p {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .section-bottom-strip {
+        height: 203px;
+        background: #334E69;
+        margin-top: -120px;
+        position: relative;
+        z-index: -1;
+    }
+}

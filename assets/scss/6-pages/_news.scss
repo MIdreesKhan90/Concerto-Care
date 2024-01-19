@@ -1,0 +1,55 @@
+/*--------------------*\
+    News Page
+\*--------------------*/
+
+.paginate__item {
+  background-color: transparent;
+  padding: 13px 24px;
+  margin-right: 10px;
+  display: inline-block;
+  color: $clr-blue-jay;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  vertical-align: top;
+  text-align: center;
+
+  @include grid-sm-down {
+    padding: 3px 10px;
+    margin-right: 5px;
+    border-right: 5px;
+  }
+
+  &.active {
+    font-weight: 700;
+    background-color: $clr-blue-squeeze;
+  }
+}
+
+.paginate__list {
+  text-align: right;
+}
+
+.news-page-section {
+  min-height: 1500px;
+
+  .card-content {
+    .card-head {
+      border-bottom: 1px solid #ebebeb;
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+      p {
+        color: #000;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 0;
+        span {
+          color: #0862f5;
+          @include grid-md-down {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

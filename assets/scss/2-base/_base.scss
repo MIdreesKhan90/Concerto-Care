@@ -1,0 +1,94 @@
+//html{
+//  scroll-behavior: smooth;
+//}
+
+body {
+    font-family: $main-font-family;
+    color: $main-font-color;
+    font-size: $main-font-size;
+    font-weight: $font-regular;
+    padding-top: 92px;
+    @include grid-md-down {
+        font-size: 14px;
+        padding-top: 60px;
+    }
+}
+
+h1, h2, h3 {
+    font-family: $baskerville-font-family;
+    font-weight: $font-regular;
+}
+
+h1 {
+    font-size: 42px;
+    @include grid-md-down {
+        font-size: 38px;
+    }
+}
+
+h2 {
+    font-size: $font-size-h2;
+    @include grid-md-down {
+        font-size: $font-size-h2-res;
+    }
+}
+
+h3 {
+    font-size: $font-size-h3;
+    line-height: em(52, 40);
+    @include grid-md-down {
+        font-size: $font-size-h3-res;
+    }
+}
+
+h4 {
+    font-size: $font-size-h4;
+    @include grid-md-down {
+        font-size: $font-size-h4-res;
+    }
+}
+
+h5 {
+    font-size: $font-size-h5;
+    line-height: em(31, 24);
+    @include grid-md-down {
+        font-size: $font-size-h5-res;
+    }
+}
+
+h6 {
+    font-size: $font-size-h6;
+    @include grid-md-down {
+        font-size: $font-size-h6-res;
+    }
+}
+
+.h4{
+
+  @include grid-md-down{
+    font-size: $font-size-h4-res;
+  }
+
+  @include grid-sm-down{
+    font-size: $font-size-h5-res;
+  }
+}
+.section {
+    padding: 70px 0;
+
+    @include grid-sm-down {
+        padding: 25px 0;
+    }
+}
+
+.font-family-raleway {
+    font-family: $raleway-font-family;
+}
+
+.sm-container {
+    max-width: 882px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+

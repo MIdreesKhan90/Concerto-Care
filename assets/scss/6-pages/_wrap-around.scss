@@ -1,0 +1,307 @@
+.wrap-hero-section {
+    background-image: url($images-path + "/home-primary-hero-bg-image.jpg");
+    background-size: cover;
+    position: relative;
+
+    @include grid-sm-down {
+        padding: 34px 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 56, 79, 0.95);
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-title {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        font-family: $nunito-font-family;
+        @include grid-sm-down {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .description {
+        max-width: 787px;
+        margin: 0 auto;
+
+        p {
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+            @include grid-sm-down {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.what-we-offer-section {
+
+    .section-title {
+        color: #1B384F;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: $nunito-font-family;
+
+        @include grid-sm-down {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    p {
+        color: #3D454E;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6em;
+        margin-bottom: 20px;
+
+        @include grid-sm-down {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+
+    img {
+        @include grid-md-down {
+            display: block;
+            margin: 20px auto;
+        }
+    }
+
+    .orange-line {
+        @include grid-sm-down {
+            margin: 0 auto 20px;
+        }
+    }
+
+    .mobile-display-none {
+        @include grid-sm-down {
+            display: none !important;
+        }
+    }
+
+    .mobile-display {
+        display: none;
+        @include grid-sm-down {
+            display: block;
+        }
+    }
+
+    .we-offer-card {
+        width: 820px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: -7px 6px 83px 0px rgba(0, 0, 0, 0.06);
+        padding: 30px 0;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        margin-top: 35px;
+
+        @include grid-md-down {
+            width: 685px;
+        }
+        @include grid-sm-down {
+            width: auto;
+            flex-flow: column;
+            background: transparent;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+        }
+
+        .left-card,
+        .right-card {
+            width: 50%;
+            padding: 24px;
+            @include grid-sm-down {
+                width: 100%;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.95);
+                box-shadow: -7px 6px 83px 0px rgba(0, 0, 0, 0.06);
+            }
+
+            h6 {
+                color: #2B3240;
+                font-family: $montserrat-font-family;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.5em;
+                @include grid-sm-down {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .left-card {
+            border-right: 1px solid #EAEAEB;
+            @include grid-sm-down {
+                border: none;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding-left: 30px;
+        position: relative;
+        color: #3D454E;
+        font-family: $montserrat-font-family;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6em;
+        @include grid-sm-down {
+            font-size: 13px;
+            padding-left: 25px;
+        }
+
+        & + li {
+            margin-top: 16px;
+            @include grid-sm-down {
+                margin-top: 12px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-image: url($images-path + "/list-check-icon.svg");
+            background-size: cover;
+
+            @include grid-sm-down {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.how-work-section {
+    background: #F2F7FA;
+
+    .orange-line {
+        margin: 0 auto 20px;
+    }
+
+    .section-title {
+        color: #1B384F;
+        font-family: $nunito-font-family;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        @include grid-sm-down {
+            font-size: 24px;
+        }
+    }
+
+    .description {
+        max-width: 993px;
+        margin: 0 auto 64px;
+        @include grid-sm-down {
+            margin: 0 30px 20px;
+        }
+
+        p {
+            color: #3D454E;
+            text-align: center;
+            font-family: $montserrat-font-family;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+            @include grid-sm-down {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .col-md-6 {
+        @include grid-sm-down {
+            padding-bottom: 16px;
+        }
+    }
+
+    .how-work-card {
+        border-radius: 12px;
+        border: 1px solid #EAEAEB;
+        background: #FFF;
+        padding: 24px;
+        height: 100%;
+        @include grid-sm-down {
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        h6 {
+            color: #2B3240;
+            font-family: $montserrat-font-family;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            @include grid-sm-down {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            color: #3D454E;
+            font-family: $montserrat-font-family;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6em;
+            margin-bottom: 20px;
+            @include grid-sm-down {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .bottom-description {
+        max-width: 684px;
+        margin: 32px auto 0;
+        @include grid-sm-down {
+            margin: 0 30px;
+        }
+
+        p {
+            color: #2B3240;
+            text-align: center;
+            font-family: $montserrat-font-family;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6em;
+            @include grid-sm-down {
+                font-size: 14px;
+            }
+        }
+    }
+}

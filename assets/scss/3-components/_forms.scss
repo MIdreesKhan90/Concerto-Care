@@ -1,0 +1,327 @@
+/*--------------*\
+    Forms
+\*--------------*/
+
+.search-form{
+  position: relative;
+  input{
+    padding-left: 64px;
+    height: 62px;
+    border-radius: 10px;
+    border: 1px solid $clr-blue-lily;
+    font-size: $main-font-size;
+  }
+  .btn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba($clr-blue-jay,0.7);
+    font-size: 25px;
+    height: 62px;
+    width: 64px;
+    padding: 10px;
+    line-height: 42px;
+  }
+}
+
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #DAE1E9;
+  background-color: #fff;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23FD7400'/%3e%3c/svg%3e");
+}
+
+.concerto-form-style{
+  background-color: #e5e5e4;
+  padding: 50px;
+  border-radius: 20px;
+  min-height: 500px;
+  position: relative;
+
+  @include grid-md-down{
+    padding: 30px 15px;
+  }
+  .form-group {
+    margin-bottom: 28px;
+    position: relative;
+    label{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .custom-control{
+    padding-left: 2rem;
+  }
+  .custom-control-label{
+    line-height: 30px;
+    margin-bottom: 0 !important;
+  }
+  .custom-control-label::before{
+    left: -2rem;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #e8e9eb;
+    background-color: #fff;
+  }
+  .custom-control-label::after{
+    top: calc(0.25rem + 5px);
+    left: calc(-2rem + 5px);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .custom-control-input:checked~.custom-control-label{
+    font-weight: 500;
+  }
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fd7500;
+    border-color: #fd7500;
+    background-color: #fff;
+  }
+  .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background: none;
+    background-color: #fd7500;
+  }
+
+  input.form-control[type="text"],
+  input.form-control[type="email"],
+  textarea.form-control{
+    font-size: 18px;
+    padding: 5px 15px;
+    background-color: #fbfcf900;
+    border: none;
+    border-bottom: 1px solid #ee7c24;
+    border-radius: 0;
+    min-height: 40px;
+
+   ~ label{
+      margin: 0;
+      position: absolute;
+      left: 15px;
+      top: 7px;
+      font-size: 14px;
+      color:#9f9d9d;
+      transform: translateY(0);
+      transition: all 0.5s ease;
+    }
+
+    &:focus{
+      background-color: transparent;
+      box-shadow: 0 2px 1px -1px rgba(238,123,35,0.5);
+      border-color: #ee7c24;
+      & ~ label{
+        top: -10px;
+        color: #000;
+      }
+    }
+
+    &:not(:placeholder-shown){
+      & ~ label{
+        top: -10px;
+        color: #000;
+      }
+    }
+    &::placeholder{
+      color: transparent;
+    }
+  }
+
+  select.form-control{
+    border-color: #db7e38;
+    background-color: #db7e38;
+    color: #fff;
+
+    &:focus {
+      box-shadow: 0 2px 1px -1px rgba(238,123,35,.5);
+      border-color: #ee7c24;
+    }
+    option {
+      background-color: #ffffff;
+      color: #ee7b23cf;
+      &:hover{
+        background-color: #fd7e14;
+        color: #fff;
+      }
+    }
+  }
+
+  .btn{
+    background-color: #db7e38;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 300;
+    padding: 6px 25px;
+    @include grid-md-down{
+      font-size: 16px;
+    }
+  }
+}
+
+.appointment-form{
+  label{
+    font-weight: 500;
+    font-size: 16px;
+    color: #2C4E6C;
+    opacity: 0.8;
+    margin-bottom: 9px;
+  }
+  .form-group{
+    margin-bottom: 26px;
+  }
+  .form-control{
+    border: 2px solid #CED8E1;
+    border-radius: 5px;
+    min-height: 60px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 18px;
+  }
+  .btn{
+    background: #FFFFFF;
+    border: 2px solid #FD7400;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FD7400;
+    height: 60px;
+    min-width: 178px;
+  }
+  .custom-checkbox{
+    padding-left: 2rem;
+    .custom-control-label{
+      margin-bottom: 0;
+      line-height: 2em;
+      &:before,
+      &:after{
+        width: 26px;
+        height: 26px;
+        left: -2rem;
+        top: 3px;
+      }
+      &::before{
+        border: 2px solid #CED8E1;
+        border-radius: 5px;
+      }
+    }
+    .custom-control-input{
+      &:checked{
+        & ~.custom-control-label{
+          &::before{
+            border-color: #FD7400;
+            background-color: transparent;
+          }
+          &::after{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23FD7400' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+          }
+        }
+      }
+      &:focus{
+        & ~.custom-control-label::before{
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .input-group{
+    .form-control{
+      border-right: 0;
+    }
+    &-append {
+      height: 60px;
+    }
+    &-text{
+      background-color: transparent;
+      border-width: 2px 2px 2px 0;
+      border-style: solid;
+      border-color: #CED8E1;
+    }
+  }
+
+  em.error{
+    font-size: 12px;
+    color: red;
+  }
+}
+
+
+.footer-form{
+  padding: 35px;
+  color: white;
+  max-width: 572px;
+  margin: 0 auto;
+
+  @include grid-sm-down{
+    padding: 15px;
+    margin-top: 15px;
+  }
+  form{
+    margin-top: 30px;
+    .form-control {
+      margin-bottom: 20px;
+      height: auto;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 15px 18px;
+      color: $clr-blue-jay;
+      @include placeholder{
+        color: #abbccc;
+      }
+    }
+  }
+}
+
+.enroll-form{
+  hr{
+    background-color: $clr-iceberg;
+    height: 2px;
+  }
+
+  .checkbox-groups{
+    .checkbox{
+      display: inline-block;
+      margin-right: 20px;
+
+      label{
+        background: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        min-width: 265px;
+        padding: 10px;
+        border: 2px solid $clr-geyser;
+        color: $clr-blue-jay;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      input{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+
+        &:checked{
+          + label{
+            border: 2px solid $clr-arty-orange;
+            color: $clr-arty-orange;
+          }
+        }
+      }
+    }
+  }
+}

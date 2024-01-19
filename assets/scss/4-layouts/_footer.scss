@@ -1,0 +1,97 @@
+/*--------------------*\
+    Footer
+\*--------------------*/
+
+.footer-logo{
+  display: block;
+  img{
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer-widget{
+  h6{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  p{
+    padding-top: 5px;
+    color: #fdfcfc;
+    font-size: 16px;
+  }
+}
+
+.footer-nav{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+    a{
+      color: #fdfcfc;
+      font-size: 16px;
+    }
+  }
+}
+
+.footer-nav-2{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    display: inline-block;
+    margin-right: 13px;
+    a{
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+}
+
+.main-footer{
+  background-color: $clr-rhino;
+  color: #fff;
+
+  p{
+    font-size: 16px;
+  }
+  .copyright{
+    font-size: 16px;
+    color: #898982;
+    a{
+      color: #898982;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-widgets{
+  form{
+    .form-control {
+      color: #abbccc;
+      padding: 1rem 0;
+      border-radius: 0;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #7f9498;
+      margin-bottom: 15px;
+      height: auto;
+      font-weight: 500;
+      @include placeholder{
+        color: #abbccc;
+      }
+    }
+    .btn{
+      margin-top: 30px;
+    }
+  }
+  .alert{
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.our-program-section {
+  img {
+    width: 100%;
+  }
+  .what-we-offer {
+    margin-top: 110px;
+    align-items: center;
+    @include grid-md-down{
+      margin-top: 50px;
+    }
+  }
+}
+
+.how-work-section {
+  .card-heading {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+    p {
+      color: #2B3240;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5em;
+    }
+  }
+}

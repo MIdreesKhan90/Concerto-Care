@@ -1,0 +1,26 @@
+/*--------------------*\
+  I AM Page
+\*--------------------*/
+.i-am-section {
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            list-style: none;
+            border: 1px solid #000;
+            margin-right: 10px;
+            border-radius: 30px;
+            padding: 5px 15px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.i-am-hero-section{
+    .hero-img{
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

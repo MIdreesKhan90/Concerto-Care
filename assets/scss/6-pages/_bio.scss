@@ -1,0 +1,87 @@
+/*--------------------*\
+  Bios Details Page
+\*--------------------*/
+.bio-hero-section{
+    background-color: $clr-rhino;
+    padding: 50px 0 120px;
+    .btn-back {
+        font-size: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        border-radius: 50%;
+        text-align: center;
+        padding: 2px 0;
+        margin-right: 10px;
+        color: white;
+        background-color: #627fa2;
+        position: absolute;
+    }
+}
+
+.bio-detail-section {
+    padding-bottom: 80px;
+}
+
+.bio-header {
+    text-align: center;
+    .member-img {
+        background-color: #000;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+        img {
+            object-fit: cover;
+            object-position: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+    .member-detail {
+        background-image: url($images-path + '/bio-bg-header-img.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin: 50px auto 0;
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+        }
+        h5 {
+            font-size: 25px;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+        @include grid-md-down {
+            h1 {
+                font-size: 24px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.bio-quote-section {
+    //min-height: 300px;
+    padding: 30px;
+    background-color: $clr-yellowish-orange;
+    border-bottom: 3px solid $clr-arty-orange;
+    margin-top: -100px;
+    width: 100%;
+    p {
+        margin: 0;
+        color: $clr-rhino;
+        font-style: italic;
+    }
+
+}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "buttercms/buttercms-php": "^2.5"
+    }
+}

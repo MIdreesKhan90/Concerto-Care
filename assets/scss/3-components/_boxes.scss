@@ -1,0 +1,49 @@
+/*--------------*\
+    Boxes
+\*--------------*/
+.address-box{
+  border: 1px solid $clr-iceberg;
+  max-width: 747px;
+  margin: 0 auto;
+  padding: 34px;
+  text-align: center;
+
+  @include grid-sm-down{
+    padding: 15px;
+  }
+
+  .border-sm-right{
+    @include grid-md{
+      border-right: 2px solid $clr-iceberg;
+    }
+
+  }
+
+  p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: em(27,18);
+  }
+}
+
+.hero-box{
+  background-color: rgba(255,255,255,0.8);
+  padding: 50px 30px;
+  margin-top: 70px;
+  @include grid-sm-down{
+    padding: 15px;
+  }
+}
+
+.location-box{
+  border: 2px solid $clr-reddish-orange;
+  background-color: rgba(#ffffff,0.8);
+  padding: 30px;
+  min-height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,133 @@
+
+.blog-post-card {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  display: block;
+  color: unset;
+  &:hover {
+    color: unset;
+  }
+  .title {
+    font-weight: 600;
+  }
+  .blog-img {
+    width: 100%;
+    max-width: 360px;
+    height: 360px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .blog-post-time {
+    font-weight: 500;
+    opacity: 0.7;
+    margin-bottom: 0;
+  }
+}
+
+.blog-filter {
+  border-bottom: 2px solid #DEEEF2;
+  padding-bottom: 50px;
+  margin-bottom: 45px;
+
+  label {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .form-control {
+    display: inline-block;
+    width: fit-content;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+.single-blog-post {
+  margin-top: -64px;
+  border-bottom: 2px solid #DEEEF2;
+  padding-bottom: 80px;
+  margin-bottom: 60px;
+  img {
+    margin-bottom: 45px;
+    max-width: 100%;
+  }
+  p {
+    font-size: 20px;
+  }
+  b {
+    font-weight: 500;
+  }
+  a {
+    color: $clr-blue-azure;
+  }
+  blockquote {
+    border-left: 5px solid $clr-blue-azure;
+    padding: 10px 0 10px 15px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.single-blog-hero {
+  h3 {
+    font-family: $montserrat-font-family;
+    font-weight: 600;
+  }
+  .blog-info {
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .back-article {
+    color: $clr-blue-rackley;
+    font-size: 16px;
+    font-weight: 500;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+.article-navigations {
+  img {
+    width: 172px;
+    height: 172px;
+    object-fit: cover;
+    margin-right: 22px;
+  }
+  .title {
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  .blog-post-time {
+    font-weight: 500;
+    opacity: 0.7;
+  }
+  a {
+    font-weight: 500;
+    opacity: 0.7;
+    color: $clr-blue-azure;
+    margin-top: 20px;
+  }
+
+  &.prev {
+    a {
+      i {
+        margin-right: 12px;
+      }
+    }
+  }
+  &.next {
+    a {
+      i {
+        margin-left: 12px;
+      }
+    }
+  }
+}

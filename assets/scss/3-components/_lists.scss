@@ -1,0 +1,73 @@
+/*--------------*\
+    Lists Section
+\*--------------*/
+.services-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0;
+  li{
+    flex: 1 1 auto;
+    margin: 0 15px 15px 0;
+    border: 2px solid $clr-geyser;
+    font-size: 15px;
+    font-weight: 400;
+    color: $main-font-color;
+    display: block;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+
+    @include grid-sm-down{
+      margin: 8px 8px 0 0;
+    }
+  }
+}
+
+.address-list {
+  .col-sm-8 {
+    @include grid-sm-down{
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.social-icon{
+  list-style: none;
+  li{
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+    a{
+      font-size: 22px;
+      text-align: center;
+      i{
+        color: #999;
+      }
+      &:hover{
+        i{
+          &.fa-twitter{
+            //color: $twitter;
+          }
+          &.fa-facebook,
+          &.fa-facebook-f{
+            //color: $facebook;
+          }
+          &.fa-linkedin-in{
+            //color: $linkedin;
+          }
+          &.fa-youtube-play{
+            //color: $youtube;
+          }
+        }
+      }
+    }
+  }
+}

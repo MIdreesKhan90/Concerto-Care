@@ -1,0 +1,357 @@
+#blueshieldca-page {
+  .hero-section {
+    .section-title {
+      color: #25282A;
+      font-family: $nunito-font-family;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      span {
+        color: #EE7B23;
+      }
+    }
+    .desc {
+      color: #515355;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      line-height: 1.6em;
+    }
+  }
+  .border-line {
+    width: 57px;
+    height: 7px;
+    border-radius: 28px;
+    background: #0081C3;
+    margin: 0 auto 20px;
+  }
+  .services-section {
+    background: #0081C3;
+    .section-title {
+      color: #FFF;
+      text-align: center;
+      font-family: $nunito-font-family;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .services-card {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 64px;
+      .service-card {
+        display: flex;
+        padding: 18px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.19);
+        background: rgba(255, 255, 255, 0.10);
+        width: 49%;
+        @include grid-md-down {
+          width: 48%;
+        }
+        @include grid-sm-down {
+          width: 100%;
+        }
+
+        .card-icon {
+          border: 1px solid rgba(255, 255, 255, 0.50);
+          border-radius: 50%;
+          padding: 10px;
+          height: fit-content;
+        }
+
+        p {
+          color: #FFF;
+          font-family: $nunito-font-family;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 31px;
+          margin: 0 0 0 15px;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .team-includes-section {
+    .section-title {
+      color: #25282A;
+      text-align: center;
+      font-family: $nunito-font-family;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 64px;
+    }
+    .desc {
+      color: #515355;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin-top: 24px;
+      span{
+        font-weight: 600;
+      }
+    }
+    .teams-card {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      .team-card {
+        display: flex;
+        align-items: center;
+        padding: 17px 24px;
+        border-radius: 10px;
+        border: 1px solid #E6E8EB;
+        background: #FBFBFB;
+        width: 49%;
+        @include grid-md-down {
+          width: 48%;
+        }
+        @include grid-sm-down {
+          width: 100%;
+        }
+
+        .card-icon {
+          border: 1px solid rgba(0, 129, 195, 0.15);
+          background: rgba(0, 129, 195, 0.08);
+          border-radius: 50%;
+          padding: 6px 9px 7px 9px;
+        }
+
+        p {
+          color: #25282A;
+          font-family: $nunito-font-family;
+          font-size: 22px;
+          font-weight: 600;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+  }
+  .faq-section {
+    background: #202628 url($images-path + "/blueshieldca/faq-bg-image.png") center/cover;
+    background-size: cover;
+
+    .section-title {
+      color: #FFF;
+      text-align: center;
+      font-family: $nunito-font-family;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .accordion {
+      .card {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #4D5153;
+        padding: 34px 0;
+
+        [aria-expanded="false"] .plus-icon {
+          display: block;
+        }
+        [aria-expanded="false"] .minus-icon {
+          display: none;
+        }
+
+        [aria-expanded="true"] .minus-icon {
+          display: block;
+        }
+        [aria-expanded="true"] .plus-icon {
+          display: none;
+        }
+
+        .card-header {
+          background: transparent;
+          border: none;
+          padding: 0;
+          .collapse-button {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            color: #FFF;
+            font-family: $montserrat-font-family;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+        }
+        .collapse-content {
+          padding-top: 24px;
+          .card-body {
+            padding: 0;
+            p {
+              color: #FFF;
+              font-family: $montserrat-font-family;
+              font-size: 16px;
+              line-height: 1.6em;
+              a {
+                color: #0081C3;
+                font-weight: 600;
+              }
+            }
+            ul {
+              margin-top: 20px;
+              li {
+                color: #FFF;
+                font-family: $montserrat-font-family;
+                font-size: 16px;
+                line-height: 1.6em;
+                a {
+                  color: #0081C3;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .providers-section {
+    .section-title {
+      color: #25282A;
+      font-family: $nunito-font-family;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: #515355;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .programs-left-content {
+      position: relative;
+      z-index: 1;
+      border-radius: 5px;
+      background: #F2F8FC;
+      width: 1070px;
+      margin-top: 50px;
+      padding: 24px;
+
+      @include grid-md-down {
+        width: 662px;
+        margin-top: 20px;
+      }
+      @include grid-sm-down {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        li {
+          color: #25282A;
+          font-family: $montserrat-font-family;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 27px;
+          span {
+            font-weight: 600;
+          }
+          & + li {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+  .collaborating-section {
+    background: #F7F7F7;
+    .section-title {
+      color: #25282A;
+      text-align: center;
+      font-family: $nunito-font-family;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: #515355;
+      text-align: center;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin-bottom: 64px;
+      span {
+        font-weight: 600;
+      }
+    }
+    .content {
+      border-radius: 5px;
+      border: 1px solid #E6E8EB;
+      background: #FFF;
+      padding: 24px 25px;
+      @include grid-sm-down {
+        margin-bottom: 20px;
+      }
+      h4 {
+        color: #25282A;
+        font-family: $montserrat-font-family;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+      p {
+        color: #515355;
+        font-family: $montserrat-font-family;
+        font-size: 16px;
+        line-height: 1.6em;
+      }
+    }
+  }
+  .contact-section {
+    .section-title {
+      color: #25282A;
+      font-family: $nunito-font-family;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    p {
+      color: #515355;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      line-height: 1.6em;
+      margin-bottom: 28px;
+    }
+    a {
+      color: #25282A;
+      font-family: $montserrat-font-family;
+      font-size: 18px;
+      font-weight: 500;
+      display: block;
+      img {
+        margin-right: 18px;
+      }
+      & + a {
+        margin-top: 22px;
+      }
+    }
+    .full-line {
+      background: #E6E8EB;
+      margin: 32px 0;
+    }
+    .desc {
+      color: #515355;
+      font-family: $montserrat-font-family;
+      font-size: 16px;
+      line-height: 1.6em;
+    }
+  }
+}

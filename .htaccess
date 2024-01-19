@@ -1,0 +1,34 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*i-am-a.*$ /i-am-template.php [L]
+RewriteRule ^what-we-do$ /what-we-do-overview.php [L]
+#RewriteRule ^partners$ /what-we-do-page.php [L]
+#RewriteRule ^in-home-primary-care$ /what-we-do-page.php [L]
+RewriteRule ^concertopace$ /what-we-do-page.php [L]
+RewriteRule ^our-mission$ /what-we-do-page.php [L]
+RewriteRule ^our-technology$ /what-we-do-page.php [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^bio/(.*)$  /bio.php?slug=$1 [L]
+RewriteRule ^location/(.*)$  /locations-single.php?slug=$1 [L]
+RewriteRule ^blog/(.*)$  /blog-single.php?slug=$1 [L]
+RewriteCond %{HTTP_HOST} ^concertohealthcare\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.concertohealthcare\.com$
+RewriteRule ^/?$ "https\:\/\/www\.concertocare\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^concertohealth\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.concertohealth\.com$
+RewriteRule ^/?$ "https\:\/\/www\.concertocare\.com\/" [R=301,L]
+#RewriteCond %{HTTP_HOST} ^techsupport\.concertocare\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.techsupport\.concertocare\.com$
+RewriteRule ^/?$ "https\:\/\/concertohealth\.service\-now\.com\/navpage\.do" [R=301,L]
+Redirect 301 /nchiring https://recruiting.paylocity.com/recruiting/jobs/Details/1206132/ConcertoCare/North-Carolina-Hiring-Event-NP-PA-RN-LPN-Social-Worker-Community-Health-Worker-and-more
+Redirect 301 /contact /get-in-touch
+Redirect 301 /bio/laure-goldberg /bio/laure-dunay
+Redirect 301 /about /our-mission
+Redirect 301 /programs /what-we-do
+Redirect 301 /BCBSRI /bcbsri
+Redirect 301 /newyork /location/new-york
+Redirect 301 /ma /location/massachusetts
+Redirect 301 /MA /location/massachusetts
+Redirect 301 /ricareers https://recruiting.paylocity.com/recruiting/jobs/Details/1852633/ConcertoCare/Rhode-Island-Hiring-Event--NPs-PAs-LPNs-RNs-Community-Health-Workers-and-more
+Redirect 301 /RICareers https://recruiting.paylocity.com/recruiting/jobs/Details/1852633/ConcertoCare/Rhode-Island-Hiring-Event--NPs-PAs-LPNs-RNs-Community-Health-Workers-and-more
